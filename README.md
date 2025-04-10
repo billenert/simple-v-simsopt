@@ -1,2 +1,2 @@
 # simple-v-simsopt
-Testing particle tracing differences between two open-source libraries.
+Check differences.ipynb for a more detailed writeup.
