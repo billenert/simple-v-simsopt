@@ -64,8 +64,7 @@ nfp = equil.nfp
 
 ## Call boozxform and setup radial interpolation of magnetic field
 order = 1
-bri = BoozerRadialInterpolant(equil, order, no_K=True, N=N, comm=comm) # if equil is Vmec object, mpi will be obtained from equil directly
-
+bri = BoozerRadialInterpolant(equil, order, no_K=True, comm=comm) # if equil is Vmec object, mpi will be obtained from equil directly
 ## Setup 3d interpolation of magnetic field
 """
 It takes time to set up InterpolatedBoozerField, but future field
