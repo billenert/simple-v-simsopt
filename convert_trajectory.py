@@ -33,7 +33,7 @@ data = np.loadtxt('fort.90001')
 npart = len(data)
 s = data[:npart, 0]
 theta0 = np.mod(data[:npart, 1], 2*np.pi)
-phi = np.mod(data[:npart, 2], 2*np.pi)
+phi = -np.mod(data[:npart, 2], 2*np.pi)
 v0 = init_v * data[:npart, 3]
 #5) starting pitch z(5)=v_\parallel / v: -> v_parallel = v * z(5)
 vpar0 = v0 * data[:npart, 4]
